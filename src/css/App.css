@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+button {
+  width: 5rem;
+  height: 2rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+input {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 2rem;
+}
+input:focus {
+  outline-color: #1976D2;
+}
+
+textarea {
+  margin-top: 1rem;
+  resize: none;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+}
+textarea:focus {
+  outline-color: #1976D2;
+}
+
+.note-card {
+  height: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.note-card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.note-card .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.note-card .wrapper .tag-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+.note-card .wrapper .tag-wrapper .tag {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #1976D2;
+  color: white;
+  font-weight: 700;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+
+.app {
+  height: 100%;
+  margin: 2rem;
+}

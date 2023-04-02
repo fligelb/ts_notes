@@ -1,0 +1,30 @@
+form {
+  & .inputs {
+    display: flex;
+    gap: 1rem;
+  }
+
+  & .group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & label {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+
+    & #title-input {
+      height: 45.6px;
+      font-size: 1em;
+      padding-left: 10px;
+    }
+  }
+
+  & .buttons-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+  }
+}

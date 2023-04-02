@@ -1,0 +1,41 @@
+.note header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.note header .wrapper {
+  display: block;
+}
+.note header .wrapper span {
+  font-size: 3em;
+  font-weight: 700;
+  width: 100%;
+}
+.note header .wrapper .tag-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+.note header .wrapper .tag-wrapper .tag {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 0.3rem;
+  background-color: #1976D2;
+  color: white;
+  font-weight: 700;
+}
+.note header .button-wrapper {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+.note header .button-wrapper #danger:hover {
+  background-color: #FF5252;
+}

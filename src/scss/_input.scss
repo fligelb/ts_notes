@@ -1,0 +1,11 @@
+@import "_vars";
+
+input {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 2rem;
+
+  &:focus {
+    outline-color: $primary-color;
+  }
+}

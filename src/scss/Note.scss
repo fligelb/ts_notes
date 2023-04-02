@@ -1,0 +1,43 @@
+@import "_vars";
+
+.note {
+  & header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    & .wrapper {
+      display: block;
+
+      & span {
+        font-size: 3em;
+        font-weight: 700;
+        width: 100%;
+      }
+
+      & .tag-wrapper {
+        display: flex;
+        gap: 5px;
+
+        & .tag {
+          border: 1px solid lightgray;
+          border-radius: 5px;
+          padding: 0.3rem;
+          background-color: $primary-color;
+          color: white;
+          font-weight: 700;
+        }
+      }
+    }
+
+    & .button-wrapper {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.5rem;
+
+      & #danger:hover {
+        background-color: $danger-color;
+      }
+    }
+  }
+}

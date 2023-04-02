@@ -1,0 +1,13 @@
+@import "_vars";
+
+button {
+  width: 5rem;
+  height: 2rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  }
+}

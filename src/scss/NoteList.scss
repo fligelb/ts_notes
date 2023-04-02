@@ -1,0 +1,60 @@
+header {
+  display: flex;
+  justify-content: space-between;
+
+  & .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.inputs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  & .group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & label {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+
+    & #title-input {
+      height: 45.6px;
+      font-size: 1em;
+      padding-left: 10px;
+    }
+  }
+}
+
+.notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .notes {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

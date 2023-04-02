@@ -1,0 +1,12 @@
+textarea {
+  margin-top: 1rem;
+  resize: none;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+
+  &:focus {
+    outline-color: $primary-color;
+  }
+}
