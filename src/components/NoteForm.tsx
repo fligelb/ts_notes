@@ -33,6 +33,8 @@ const NoteForm = ({
     selectedTags.map(tag => {
       text = text.replaceAll('#' + tag.label, '**' + tag.label + '**')
       text = text.replaceAll(tag.label, '**' + tag.label + '**')
+      if (text.search(/\*\*\*\*/ + tag.label + /\*\*\*\*/))
+        text = text.replaceAll('****' + tag.label + '****', '**' + tag.label + '**')
     })
 
     onSubmit({
